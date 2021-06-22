@@ -1,4 +1,5 @@
 let btn = document.querySelector("#submit");
+let alertas = document.querySelector("#alert");
 
 function validateForm() {
     let vardas = document.querySelector("#name").value;
@@ -8,13 +9,17 @@ function validateForm() {
         return false;
     }
     if (vardas != "" && email.includes("@")) {
-        // alert("all good!");
-        // setTimeout(function () { alert.close(); }, 5000)
-        var w = window.open('', '', 'width=300,height=300')
-        w.document.write('Sėkmingai užsiprenumeravote naujienlaiškį!')
-        w.focus()
-        setTimeout(function () { w.close(); }, 6000)
+        alertas.innerHTML = "Sėkmingai užsiregistravote naujienlaiškiui!"
+        window.setTimeout(timer, 6000);
     }
 }
 
-btn.addEventListener("click", validateForm);
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    validateForm();
+});
+
+function timer() {
+    alertas.innerHTML = "";
+}
+console.log(alertas);
