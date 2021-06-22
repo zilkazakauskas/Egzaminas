@@ -1,0 +1,53 @@
+#logo {
+  max-height: 60px;
+  margin: 20px;
+}
+
+#main_and_footer {
+  background-color: #f8f8f8;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.card-title {
+  color: #6eb92b;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+#section-header {
+  color: #2c3e50;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#submit {
+  background-color: #6eb92b;
+  color: #ffffff;
+  border-radius: 5px;
+  border-style: none;
+}
+#author,
+#description,
+#footer-text {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+#author,
+#description,
+span,
+#section-2-description {
+  color: #697070;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 200;
+}
